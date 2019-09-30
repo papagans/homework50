@@ -8,6 +8,7 @@
    {% for comment in comments %}
        <h2>{{ comment.author }}</h2>
        <div>{{ comment.text }}</div>
+        <h2>Comment for Article: <a href="{% url 'article_view' comment.article_id %}">{{ comment.article }}</a></h2>
        <p><a href="{% url 'comment_view' comment.pk %}">More...</a></p>
 {#       <p><a href="{% url 'article_update' article.pk %}">Edit</a></p>#}
        <p><a href="{% url 'comment_delete' comment.pk %}">Delete</a></p>

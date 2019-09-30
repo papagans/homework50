@@ -22,20 +22,6 @@ class ArticleView(TemplateView):
         return context
 
 
-# def article_create_view(request):
-#     if request.method == 'GET':
-#         form = ArticleForm()
-#         return render(request, 'create.html', context={'form': form})
-#     elif request.method == 'POST':
-#         form = ArticleForm(data=request.POST)
-#         if form.is_valid():
-#             data = form.cleaned_data
-#             article = Article.objects.create(title=data['title'], text=data['text'], author=data['author'])
-#             return redirect('article_view', article_pk=article.pk)
-#         else:
-#             return render(request, 'create.html', context={'form': form})
-
-
 class ArticleCreateView(View):
     def get(self, request, *args, **kwargs):
         form = ArticleForm()
@@ -154,10 +140,3 @@ class CommentUpdateView(View):
             return redirect('comment_view', pk=comment.pk)
         else:
             return render(request, 'comments/comment_update.html', context={'form': form,  'comment': comment.pk})
-# def article_delete_view(request, pk):
-#     article = get_object_or_404(Article, pk=pk)
-#     if request.method == 'GET':
-#         return render(request, 'delete.html', context={'article': article})
-#     elif request.method == 'POST':
-#         article.delete()
-#         return redirect('index')

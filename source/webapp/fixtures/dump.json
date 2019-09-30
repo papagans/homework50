@@ -1,0 +1,75 @@
+[
+{
+  "model": "webapp.article",
+  "pk": 1,
+  "fields": {
+    "title": "Article",
+    "text": "Text",
+    "author": "Me",
+    "created_at": "2019-09-02T14:02:04.500Z",
+    "updated_at": "2019-09-02T14:02:04.500Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 2,
+  "fields": {
+    "title": "Title",
+    "text": "Article",
+    "author": "He",
+    "created_at": "2019-09-02T14:02:45.091Z",
+    "updated_at": "2019-09-02T14:54:22.289Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 3,
+  "fields": {
+    "title": "Article 3",
+    "text": "Text",
+    "author": "She",
+    "created_at": "2019-09-02T14:03:15.200Z",
+    "updated_at": "2019-09-02T14:03:15.200Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 4,
+  "fields": {
+    "title": "Even More",
+    "text": "Contraptions",
+    "author": "Me",
+    "created_at": "2019-09-02T14:08:41.741Z",
+    "updated_at": "2019-09-02T14:08:41.741Z"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 5,
+  "fields": {
+    "title": "Test",
+    "text": "Test Text",
+    "author": "He",
+    "created_at": "2019-09-02T14:43:47.628Z",
+    "updated_at": "2019-09-02T14:43:47.628Z"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$X3Vx1rmwguqi$FjPJIYSzK5HWcA0x3/EHen9y0/xuGPFk0WM/+Ioc8ys=",
+    "last_login": "2019-09-02T14:36:04Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "\u0410\u0434\u043c\u0438\u043d",
+    "last_name": "\u0410\u0434\u043c\u0438\u043d\u044b\u0447",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-02T14:35:56Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
